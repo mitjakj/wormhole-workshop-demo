@@ -9,7 +9,7 @@ async function main() {
   await contr.deployed();
 
   console.log(
-    "NFT_Tree deployed to: %saddress/%s",
+    "aCO2Token deployed to: %saddress/%s",
     hre.network.config.explorer,
     contr.address
   );
