@@ -1,0 +1,45 @@
+# Compiled Java class files
+*.class
+
+# Compiled Python bytecode
+*.py[cod]
+
+# Log files
+*.log
+
+# Package files
+*.jar
+
+# Maven
+target/
+dist/
+
+# JetBrains IDE
+# Config files, private keys
+.idea/
+secrets.json
+.vscode
+
+# Node.js
+node_modules
+package-lock.json
+
+#Hardhat files
+bin
+cache
+artifacts
+data/
+hardhat.config.js
+coverage/
+env/
+coverage.json
+
+#Solidity
+soljson*
+
+secrets.json
+coverage.json
+.tmp*
+.env
+
+token-owners.csv

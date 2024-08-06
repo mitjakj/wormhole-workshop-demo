@@ -1,0 +1,32 @@
+{
+  "name": "workshop-contracts",
+  "version": "0.0.1",
+  "description": "Smart contract for workshop.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx hardhat test",
+    "build": "npx hardhat compile",
+    "flatten": "npx hardhat flatten",
+    "coverage": "npx hardhat coverage"
+  },
+  "author": "Mitja Kjuder",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/edr-linux-x64-gnu": "^0.3.5",
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@openzeppelin/hardhat-upgrades": "^1.10.0",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.5.1",
+    "hardhat": "^2.17.1",
+    "hardhat-abi-exporter": "^2.3.1",
+    "hardhat-contract-sizer": "^2.1.1",
+    "solidity-coverage": "^0.8.4"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0",
+    "@openzeppelin/contracts-upgradeable": "^5.0.0",
+    "@nomiclabs/hardhat-etherscan": "^3.1.1"
+  }
+}
