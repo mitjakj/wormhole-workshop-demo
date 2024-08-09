@@ -1,6 +1,6 @@
 const hre = require("hardhat");
 
-const NFT_TREE_ADDRESS = "0xc7964E79fed9afeD44fA715A72b17302C0e05F3f";
+const NFT_TREE_ADDRESS = "0x7eC34DC6f0F6C3939fbE1D0b1041746596495a60";
 
 const moonbeamConfig = hre.userConfig.networks.moonbaseAlpha;
 const moonbeamProvider = new hre.ethers.providers.JsonRpcProvider(moonbeamConfig.url);
@@ -35,7 +35,7 @@ async function main() {
   const MOONBEAM_gasLimit = 500000;
   const wormholeFee_hop1 = (await wormholeRelayer_CELO.quoteEVMDeliveryPrice(MOONBEAM_targetChain, MOONBEAM_receiverValue, MOONBEAM_gasLimit))[0];
 
-  const transferTokenId = 4;
+  const transferTokenId = 2;
   const transferRecipient = "0x1F21f7A70997e3eC5FbD61C047A26Cdc88e7089B";
 
   const ownerOf = await nftTree.ownerOf(transferTokenId);

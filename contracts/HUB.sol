@@ -63,6 +63,10 @@ contract HUB is IWormholeReceiver, Ownable {
 
         require(mode == 1 || mode == 2, "Invalid mode");
 
+
+        // Save previous owner in case of transfer
+        address previousOwner = owners[sourceChain][sourceAddr][ids[0]];
+
         // Save owner for each id
         for (uint256 i = 0; i < ids.length; i++) {
             owners[sourceChain][sourceAddr][ids[i]] = owner;
@@ -80,11 +84,11 @@ contract HUB is IWormholeReceiver, Ownable {
             // Execute 2nd hop -- mint tokens on Base
             uint256[] memory amounts = new uint256[](ids.length);
             for(uint256 i=0; i<ids.length; i++) {
-                amounts[i] = 10 ether; // 10 aCO2 tokens
+                amounts[i] = 10; // 10 aCO2 tokens
             }
 
             bytes memory payload = abi.encode(
-                owner,
+                previousOwner,
                 ids,
                 amounts
             );
