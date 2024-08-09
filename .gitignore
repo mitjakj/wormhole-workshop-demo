@@ -29,7 +29,6 @@ bin
 cache
 artifacts
 data/
-hardhat.config.js
 coverage/
 env/
 coverage.json
@@ -41,5 +40,3 @@ secrets.json
 coverage.json
 .tmp*
 .env
-
-token-owners.csv
