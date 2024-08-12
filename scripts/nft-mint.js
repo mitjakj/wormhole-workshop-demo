@@ -1,6 +1,6 @@
 const hre = require("hardhat");
 
-const NFT_TREE_ADDRESS = "0x7eC34DC6f0F6C3939fbE1D0b1041746596495a60";
+const NFT_TREE_ADDRESS = "0xAdB4f214Ee43866711e5De6dA0CEc8AedF8FC636";
 
 async function main() {
   const owner = (await hre.ethers.getSigners())[0]; 

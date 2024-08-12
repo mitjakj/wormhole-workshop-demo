@@ -130,7 +130,7 @@ contract HUB is IWormholeReceiver, Ownable {
         aCO2Token = _aco2Token;
     }
 
-    function whitelist(uint16 sourceChain, address sourceAddr) public onlyOwner {
-        whitelisted[sourceChain][sourceAddr] = true;
+    function whitelist(uint16 sourceChain, address sourceAddr, bool isWhitelisted) public onlyOwner {
+        whitelisted[sourceChain][sourceAddr] = isWhitelisted;
     }
 }
